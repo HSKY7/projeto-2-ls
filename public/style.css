@@ -1,0 +1,381 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-color: white;
+}
+
+header {
+    text-align: center;
+    width: 100%;
+    background-position: center;
+    background-color: rgb(13, 206, 231);
+}
+
+
+header h1 {
+    font-size: 40px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+header p {
+    font-size: 20px;
+    color: white;
+}
+
+.position ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    border-radius: 10px;
+}
+
+.position {
+    background-color: #333;
+    border: 1px solid #333;
+    border-radius: 10px;
+
+}
+
+.position li {
+    margin: 0 10px;
+}
+
+.position a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.position form {
+    display: flex;
+    align-items: center;
+}
+
+.position input[type="text"] {
+    padding: 5px;
+    border: none;
+    border-radius: 3px;
+}
+
+.position button[type="button"] {
+    padding: 5px 10px;
+    background-color: #fff;
+    border: none;
+    border-radius: 3px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.position button[type="submit"] i {
+    color: #333;
+}
+
+nav ul {
+    list-style-type: none;
+    background-color: rgb(211, 210, 210);
+    overflow: hidden;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: 10px;
+}
+
+nav a {
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+}
+
+nav ul li a:hover {
+    color: white;
+    background-color: rgb(231, 129, 13)
+}
+
+nav li {
+    float: left;
+}
+
+img {
+    width: 100%;
+}
+
+.row {
+    padding: 0 20px;
+    display: table;
+}
+
+.animacao {
+    transition: transform 1s;
+    will-change: transform;
+}
+
+.animacao:hover {
+    transform: scale(0.9);
+}
+
+.imagemCidade {
+    filter: sepia(100%);
+    transition: filter 0.5s;
+}
+
+.imagemCidade:hover {
+    filter: sepia(0%);
+}
+
+section {
+    float: left;
+    width: 60%;
+}
+
+aside {
+    float: left;
+    width: 40%;
+    padding-left: 20px;
+}
+
+.card {
+    background-color: rgb(211, 210, 210);
+    padding: 20px;
+    margin-top: 20px;
+}
+
+
+.card h2,
+h4 {
+    font-size: 16px;
+}
+
+
+
+.row,
+card h2 p {
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px;
+    padding: 10px;
+    text-align: justify;
+}
+
+.btn {
+    font-size: 1rem;
+}
+
+a.btn:hover {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    background: rgb(13, 206, 231);
+}
+
+a.botao:hover {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    background: rgb(13, 206, 231);
+}
+
+/* footer */
+
+.footer {
+    max-width: 100%;
+}
+
+footer,
+.position {
+    position: relative;
+    bottom: 5px;
+}
+
+.elemento:hover {
+    transform: translateX(100px) rotate3d(1, 2, 2, 410deg);
+    transition-timing-function: linear;
+    transition-duration: 3s;
+}
+
+footer section.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: rgb(13, 206, 231);
+
+}
+
+footer section .contato {
+    display: flex;
+    text-align: start;
+    align-items: center;
+    margin: 0;
+    height: 100px;
+    width: 100px;
+    font-weight: bold;
+}
+
+footer section #prefeitura {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+    width: 90px;
+    height: 90px;
+    /* border-radius: 50%; */
+    text-decoration: none;
+}
+
+footer section .adress {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+    width: 90px;
+    height: 90px;
+    /* border-radius: 50%; */
+    text-decoration: none;
+}
+
+footer section .address a img {
+    width: 130px;
+    height: 130px;
+    margin: 0;
+}
+
+footer section .social a {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+    width: 60px;
+    height: 60px;
+    border: 5px solid black;
+    border-radius: 50%;
+    color: black;
+    text-decoration: none;
+    background-color: white;
+}
+
+footer section .social ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+footer section .social h1 {
+    text-align: center;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+#social {
+    color: rgb(13, 206, 231);
+    font-size: 2rem;
+}
+
+.social #facebook a:hover {
+    color: navy;
+}
+
+.social #twitter a:hover {
+    color: dodgerblue;
+}
+
+.social #instagram a:hover {
+    color: #d6249f;
+}
+
+
+/* COPYRIGHT */
+
+.copyright {
+    font-weight: bold;
+    text-align: center;
+    padding: 15px;
+    color: rgb(17, 17, 17);
+    background-color: rgb(211, 210, 210);
+}
+
+.rodape .copyright {
+    width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+
+    section,
+    aside {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    nav li {
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+}
+
+/* MAPAS */
+
+body {
+    background-color: #fafafa;
+    font-family: sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-container {
+    background-color: #fff;
+    padding: 30px;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mapas-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mapas-form input[type="text"],
+.mapas-form #cepError {
+    width: 100%;
+}
+
+.mapas-form input {
+    margin: 10px 0;
+    padding: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+.input-cep-error {
+    border: 1px solid #f00;
+    background: rgba(255, 0, 0, 0.1);
+}
+
+.mapas-form #cepError {
+    color: rgba(255, 0, 0, 0.68);
+    margin-top: -5px;
+}
